@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import UnprotectedStats from './components/UnprotectedStats';
 import PainPoints from './components/PainPoints';
 import Features from './components/Features';
 import HospitalNetwork from './components/HospitalNetwork';
@@ -18,6 +19,7 @@ const App: React.FC = () => {
       <Header />
       <main>
         <Hero />
+        <UnprotectedStats />
         <PainPoints />
         <Features />
         <Coverage />
