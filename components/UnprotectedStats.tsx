@@ -53,28 +53,32 @@ const UnprotectedStats: React.FC = () => {
                 <div className="relative w-full max-w-3xl mx-auto h-[400px] md:h-[500px] flex items-center justify-center">
 
                     {/* The Floating Chart */}
+                    {/* The Floating Chart */}
                     <div className="relative w-full h-full animate-float">
-                        <ResponsiveContainer width="100%" height="100%" minHeight={400}>
-                            <PieChart width={400} height={400}>
-                                <Pie
-                                    data={data}
-                                    cx="50%"
-                                    cy="50%"
-                                    innerRadius={100}
-                                    outerRadius={160}
-                                    paddingAngle={0}
-                                    dataKey="value"
-                                    startAngle={90}
-                                    endAngle={-270}
-                                    cornerRadius={10}
-                                    stroke="none"
-                                >
-                                    {data.map((entry, index) => (
-                                        <Cell key={`cell-${index}`} fill={entry.color} />
-                                    ))}
-                                </Pie>
-                            </PieChart>
-                        </ResponsiveContainer>
+                        {mounted && (
+                            <ResponsiveContainer width="100%" height="100%" minHeight={400}>
+                                <PieChart>
+                                    <Pie
+                                        data={data}
+                                        cx="50%"
+                                        cy="50%"
+                                        innerRadius={100}
+                                        outerRadius={160}
+                                        paddingAngle={0}
+                                        dataKey="value"
+                                        startAngle={90}
+                                        endAngle={-270}
+                                        cornerRadius={10}
+                                        stroke="none"
+                                        isAnimationActive={false}
+                                    >
+                                        {data.map((entry, index) => (
+                                            <Cell key={`cell-${index}`} fill={entry.color} />
+                                        ))}
+                                    </Pie>
+                                </PieChart>
+                            </ResponsiveContainer>
+                        )}
                     </div>
 
                     {/* Overlays / Floating Cards */}
