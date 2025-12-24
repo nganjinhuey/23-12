@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import { Users, AlertCircle, HelpCircle, DollarSign, Search } from 'lucide-react';
 
@@ -8,6 +8,16 @@ const UnprotectedStats: React.FC = () => {
         { name: 'Cannot Afford Premium', value: 42, color: '#db2777' }, // Pink
         { name: 'Think It\'s Unnecessary', value: 36, color: '#8b5cf6' }, // Purple
     ];
+
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) {
+        return <div className="py-20 bg-white h-[600px]"></div>; // Placeholder to prevent layout shift
+    }
 
     return (
         <section className="py-20 bg-white relative overflow-hidden">
