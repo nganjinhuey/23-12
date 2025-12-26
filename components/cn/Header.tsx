@@ -32,7 +32,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-3 group">
+            <Link to="/cn" className="flex items-center space-x-3 group">
               <img
                 src="logo.jpg"
                 alt="We Kongsi Logo"
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
               />
               <div>
                 <span className={`block font-bold text-xl text-brand-navy`}>We Kongsi</span>
-                <span className={`block text-xs font-medium text-brand-blue`}>Anyone Can Afford Healthcare</span>
+                <span className={`block text-xs font-medium text-brand-blue`}>人人都能负担得起的医疗保健</span>
               </div>
             </Link>
           </div>
@@ -63,15 +63,15 @@ const Header: React.FC = () => {
               {isLangOpen && (
                 <div className="absolute top-full right-0 mt-2 w-48 bg-brand-navy rounded-xl shadow-xl py-2 z-50 border border-brand-teal/20 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
                   <div className="px-4 py-2 text-xs font-bold text-slate-400 uppercase tracking-wider border-b border-white/10 mb-1">
-                    Select Language
+                    选择语言
                   </div>
-                  <Link to="/" className="flex items-center px-4 py-2.5 text-sm text-white hover:bg-brand-blue transition-colors">
+                  <Link to="/" className="flex items-center px-4 py-2.5 text-sm text-slate-200 hover:text-white hover:bg-brand-blue transition-colors">
                     <span className="mr-3 text-lg">🇬🇧</span> English
                   </Link>
                   <Link to="/bm" className="flex items-center px-4 py-2.5 text-sm text-slate-200 hover:text-white hover:bg-brand-blue transition-colors">
                     <span className="mr-3 text-lg">🇲🇾</span> Bahasa Malaysia
                   </Link>
-                  <Link to="/cn" className="flex items-center px-4 py-2.5 text-sm text-slate-200 hover:text-white hover:bg-brand-blue transition-colors">
+                  <Link to="/cn" className="flex items-center px-4 py-2.5 text-sm text-white hover:bg-brand-blue transition-colors">
                     <span className="mr-3 text-lg">🇨🇳</span> 中文 (简体)
                   </Link>
                 </div>
@@ -80,7 +80,7 @@ const Header: React.FC = () => {
 
             {/* CTA Button - Links to WhatsApp */}
             <Button size="sm" className="shadow-md" onClick={() => window.open('https://wa.me/60108768760', '_blank')}>
-              Join Now
+              立即加入
             </Button>
           </div>
         </div>

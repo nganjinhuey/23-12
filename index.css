@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: 'Inter', sans-serif;
+
+    --color-brand-navy: #01154f;
+    --color-brand-blue: #16647d;
+    --color-brand-teal: #34e3c4;
+    --color-brand-navy-light: #02207a;
+
+    --color-brand-surface-blue: #f0f7fa;
+    --color-brand-surface-teal: #f0fdfc;
+    --color-brand-surface-navy: #f2f4f8;
+
+    --animate-marquee: marquee 40s linear infinite;
+    --animate-bounce-slow: bounce 3s infinite;
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: var(--font-sans);
+    }
+}
+
+/* Hide scrollbar for testimonials */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

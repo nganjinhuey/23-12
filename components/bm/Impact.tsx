@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from './Section';
-import { CHART_DATA } from '../constants';
+import { CHART_DATA } from '../../constants_bm';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Coffee, Users, Activity, Building2, HeartHandshake } from 'lucide-react';
 import AnimatedCounter from './AnimatedCounter';
@@ -23,8 +23,8 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 const Impact: React.FC = () => {
   return (
     <Section
-      title="What Our Community Has Built Together"
-      subtitle="See the real impact we make when we come together."
+      title="Apa Yang Telah Dibina Oleh Komuniti Kami"
+      subtitle="Lihat impak sebenar apabila kita bersatu."
       id="impact"
       className="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50"
       dark={false}
@@ -49,9 +49,9 @@ const Impact: React.FC = () => {
             <div className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-navy mb-2 tracking-tight leading-none">
               <AnimatedCounter end={5230} suffix="+" />
             </div>
-            <div className="text-sm md:text-base font-bold text-slate-500 uppercase tracking-widest">Total Members</div>
+            <div className="text-sm md:text-base font-bold text-slate-500 uppercase tracking-widest">Jumlah Ahli</div>
             <p className="text-xs text-slate-400 mt-1 max-w-md mx-auto">
-              A rapidly growing family protecting each other.
+              Keluarga yang berkembang pesat melindungi satu sama lain.
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ const Impact: React.FC = () => {
             <div className="text-xl md:text-2xl font-bold text-brand-navy leading-tight">
               RM<AnimatedCounter end={1200000} />+
             </div>
-            <div className="text-[10px] md:text-xs font-bold text-slate-400 uppercase mt-1 tracking-wide">Total Shared Amount</div>
+            <div className="text-[10px] md:text-xs font-bold text-slate-400 uppercase mt-1 tracking-wide">Jumlah Wang Dikongsi</div>
           </div>
 
           {/* Hospital Cases */}
@@ -73,7 +73,7 @@ const Impact: React.FC = () => {
             <div className="text-xl md:text-2xl font-bold text-brand-navy leading-tight">
               <AnimatedCounter end={142} />
             </div>
-            <div className="text-[10px] md:text-xs font-bold text-slate-400 uppercase mt-1 tracking-wide">Hospital Cases Approved</div>
+            <div className="text-[10px] md:text-xs font-bold text-slate-400 uppercase mt-1 tracking-wide">Kes Hospital Diluluskan</div>
           </div>
 
           {/* Clinic Cases */}
@@ -82,14 +82,14 @@ const Impact: React.FC = () => {
             <div className="text-xl md:text-2xl font-bold text-brand-navy leading-tight">
               <AnimatedCounter end={856} />
             </div>
-            <div className="text-[10px] md:text-xs font-bold text-slate-400 uppercase mt-1 tracking-wide">Clinic Cases Approved</div>
+            <div className="text-[10px] md:text-xs font-bold text-slate-400 uppercase mt-1 tracking-wide">Kes Klinik Diluluskan</div>
           </div>
         </div>
       </div>
 
       {/* Graph Section - Larger Card */}
       <div className="max-w-5xl mx-auto bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-100 relative overflow-hidden">
-        <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-6 text-center">Average Monthly Sharing Fee (2025)</h3>
+        <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-6 text-center">Purata Yuran Perkongsian Bulanan (2025)</h3>
 
         <div className="h-[350px] w-full relative z-10">
           <ResponsiveContainer width="100%" height="100%">
@@ -148,11 +148,11 @@ const Impact: React.FC = () => {
           <div className="text-center md:text-left">
             <h4 className="text-brand-navy font-black text-xl mb-2 flex items-center justify-center md:justify-start gap-2">
               <Coffee className="w-5 h-5 text-brand-blue" />
-              Think about it:
+              Fikirkan sejenak:
             </h4>
             <p className="text-slate-600 text-lg leading-relaxed">
-              That's less than <span className="font-bold text-brand-blue bg-blue-50 px-2 py-0.5 rounded-lg border border-blue-100">RM1.60 a day</span>. <br className="hidden md:block" />
-              Cheaper than a Teh Tarik for <span className="font-bold text-brand-teal bg-teal-50 px-2 py-0.5 rounded-lg border border-teal-100">RM1 Million</span> coverage.
+              Itu kurang daripada <span className="font-bold text-brand-blue bg-blue-50 px-2 py-0.5 rounded-lg border border-blue-100">RM1.60 sehari</span>. <br className="hidden md:block" />
+              Lebih murah daripada Teh Tarik untuk perlindungan <span className="font-bold text-brand-teal bg-teal-50 px-2 py-0.5 rounded-lg border border-teal-100">RM1 Juta</span>.
             </p>
           </div>
 

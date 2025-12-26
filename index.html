@@ -1,80 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>We Kongsi - Medical Cost Sharing Community</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              brand: {
-                navy: '#01154f',      // Main Dark
-                blue: '#16647d',      // Muted Teal/Blue (Secondary)
-                teal: '#34e3c4',      // Bright Highlight
-                'navy-light': '#02207a', 
-                
-                // Soft backgrounds
-                'surface-blue': '#f0f7fa', // Very light version of brand-blue
-                'surface-teal': '#f0fdfc', // Very light version of brand-teal
-                'surface-navy': '#f2f4f8', // Very light cool grey/navy tint
-              }
-            },
-            animation: {
-              marquee: 'marquee 40s linear infinite',
-              'bounce-slow': 'bounce 3s infinite',
-            },
-            keyframes: {
-              marquee: {
-                '0%': { transform: 'translateX(0)' },
-                '100%': { transform: 'translateX(-50%)' },
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-      /* Hide scrollbar for testimonials */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
-      .no-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-      }
-    </style>
 
-    <!-- React & Babel for browser-side execution -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@18.2.0",
-    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
-    "lucide-react": "https://esm.sh/lucide-react@0.263.1?deps=react@18.2.0",
-    "recharts": "https://esm.sh/recharts@2.12.3?deps=react@18.2.0,react-dom@18.2.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/"
-  }
-}
-</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We Kongsi - Medical Cost Sharing Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Hide scrollbar for testimonials */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    #error-display {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fef2f2;
+      color: #991b1b;
+      padding: 1rem;
+      z-index: 9999;
+      display: none;
+      border-bottom: 1px solid #f87171;
+      font-family: monospace;
+      font-size: 14px;
+    }
+  </style>
+  <script>
+    window.addEventListener('error', function (event) {
+      const errorDisplay = document.getElementById('error-display');
+      if (errorDisplay) {
+        errorDisplay.style.display = 'block';
+        errorDisplay.innerText = 'Error: ' + event.message + ' at ' + event.filename + ':' + event.lineno;
+      }
+    });
+    window.addEventListener('unhandledrejection', function (event) {
+      const errorDisplay = document.getElementById('error-display');
+      if (errorDisplay) {
+        errorDisplay.style.display = 'block';
+        errorDisplay.innerText = 'Promise Rejection: ' + event.reason;
+      }
+    });
+  </script>
+</head>
+
+
+
+<body className="bg-white">
+  <div id="root"></div>
   <script type="module" src="./index.tsx"></script>
 </body>
+
 </html>

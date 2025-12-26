@@ -9,14 +9,14 @@ const UnprotectedStats: React.FC = () => {
                 {/* Headline */}
                 <div className="text-center mb-20">
                     <h2 className="text-4xl md:text-6xl font-extrabold text-brand-navy mb-6 tracking-tight">
-                        78% of Malaysians are <br className="hidden md:block" />
+                        78% Rakyat Malaysia <br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500">
-                            UNPROTECTED
+                            TIDAK DILINDUNGI
                         </span>
                     </h2>
 
                     <div className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-red-50 border border-red-100 mb-8 shadow-sm hover:scale-105 transition-transform duration-300">
-                        <span className="text-red-600 font-bold text-xl tracking-tight">Are you one of them?</span>
+                        <span className="text-red-600 font-bold text-xl tracking-tight">Adakah anda salah seorang daripada mereka?</span>
                         <span className="text-2xl animate-wave">✋</span>
                     </div>
                 </div>
@@ -37,9 +37,9 @@ const UnprotectedStats: React.FC = () => {
                             </span>
                         </div>
 
-                        <h3 className="text-2xl font-bold text-red-600 mb-4">"Cannot Afford It"</h3>
+                        <h3 className="text-2xl font-bold text-red-600 mb-4">"Tak Mampu"</h3>
                         <p className="text-slate-600 leading-relaxed flex-grow font-medium">
-                            Traditional insurance premiums are rising faster than wages, pricing out nearly half the population from essential coverage.
+                            Premium insurans tradisional meningkat lebih cepat daripada gaji, menyebabkan hampir separuh populasi tidak mampu memiliki perlindungan penting.
                         </p>
                     </div>
 
@@ -56,9 +56,9 @@ const UnprotectedStats: React.FC = () => {
                             </span>
                         </div>
 
-                        <h3 className="text-2xl font-bold text-orange-600 mb-4">"Don't Need It"</h3>
+                        <h3 className="text-2xl font-bold text-orange-600 mb-4">"Tak Perlu"</h3>
                         <p className="text-slate-600 leading-relaxed flex-grow font-medium">
-                            Many underestimate their health risks until it's too late, leaving them exposed to devastating hospital bills without a safety net.
+                            Ramai memandang remeh risiko kesihatan sehingga terlambat, terdedah kepada bil hospital membebankan tanpa jaringan keselamatan.
                         </p>
                     </div>
 
@@ -77,13 +77,13 @@ const UnprotectedStats: React.FC = () => {
                             </span>
                         </div>
 
-                        <h3 className="text-2xl font-bold text-white mb-4 relative z-10">Are Protected</h3>
+                        <h3 className="text-2xl font-bold text-white mb-4 relative z-10">Dilindungi</h3>
                         <p className="text-brand-surface-blue opacity-80 leading-relaxed mb-8 text-sm relative z-10 flex-grow">
-                            Only a small minority have adequate coverage.
+                            Hanya sebilangan kecil mempunyai perlindungan yang mencukupi.
                         </p>
 
                         <button className="w-full py-4 bg-brand-teal text-brand-navy font-bold rounded-xl hover:bg-white transition-colors flex items-center justify-center gap-2 group-hover:shadow-[0_0_20px_rgba(52,227,196,0.4)] relative z-10 cursor-pointer text-sm">
-                            Get Protected Today
+                            Dapatkan Perlindungan Hari Ini
                             <Users size={16} className="transition-transform group-hover:translate-x-1" />
                         </button>
                     </div>
@@ -92,7 +92,7 @@ const UnprotectedStats: React.FC = () => {
 
                 <div className="mt-16 flex items-center justify-center gap-2 text-slate-400 text-sm font-medium">
                     <span className="w-2 h-2 rounded-full bg-slate-300"></span>
-                    Source: National Health & Morbidity Survey (NHMS)
+                    Sumber: Tinjauan Kebangsaan Kesihatan & Morbiditi (NHMS)
                 </div>
 
             </div>

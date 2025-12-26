@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from './Section';
-import { FEATURES } from '../constants';
+import { FEATURES } from '../../constants_bm';
 import Button from './Button';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
@@ -24,11 +24,11 @@ const Features: React.FC = () => {
                     <div className="w-full lg:w-1/2">
                         <div className="inline-flex items-center px-3 py-1 bg-white/80 backdrop-blur-sm rounded-full mb-6 shadow-sm border border-brand-blue/10">
                             <Sparkles className="w-4 h-4 text-brand-navy mr-2" />
-                            <span className="text-xs font-bold tracking-wider uppercase text-brand-navy">Who We Are</span>
+                            <span className="text-xs font-bold tracking-wider uppercase text-brand-navy">Siapa Kami</span>
                         </div>
 
                         <h2 className="text-4xl md:text-5xl font-extrabold text-brand-navy mb-8 leading-tight">
-                            Introducing <br />
+                            Memperkenalkan <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-navy via-brand-blue to-brand-teal animate-gradient">We Kongsi</span>
                         </h2>
 
@@ -39,17 +39,17 @@ const Features: React.FC = () => {
                                 <div className="absolute top-0 right-0 w-full h-full bg-white/40 skew-x-12 translate-x-full group-hover:translate-x-[-200%] transition-transform duration-1000"></div>
 
                                 <h3 className="text-lg md:text-xl font-extrabold text-brand-navy uppercase tracking-wide leading-snug relative z-10">
-                                    A Community Based Medical Cost-Sharing Program
+                                    Program Perkongsian Kos Perubatan Berasaskan Komuniti
                                 </h3>
                             </div>
                         </div>
 
                         <p className="text-slate-700 text-lg leading-relaxed mb-8 font-medium">
-                            We are a community dedicated to ensuring transparent, affordable, and fair healthcare for everyone. We believe that by coming together, we can protect each other without the burden of expensive medical premiums.
+                            Kami adalah komuniti yang berdedikasi untuk memastikan penjagaan kesihatan yang telus, mampu milik, dan adil untuk semua. Kami percaya bahawa dengan bersatu, kita boleh melindungi satu sama lain tanpa beban premium perubatan yang mahal.
                         </p>
 
                         <Button variant="primary" className="px-8 shadow-brand-navy/20 bg-brand-navy hover:bg-brand-navy-light text-white border-none" onClick={scrollToJoin}>
-                            Talk to Us to Understand the Benefits <ArrowRight className="ml-2 w-4 h-4" />
+                            Hubungi Kami Untuk Fahami Manfaatnya <ArrowRight className="ml-2 w-4 h-4" />
                         </Button>
                     </div>
 
@@ -65,7 +65,7 @@ const Features: React.FC = () => {
                             {/* Overlay Card */}
                             <div className="absolute bottom-6 left-6 max-w-xs bg-white/90 backdrop-blur-md p-5 rounded-xl shadow-xl text-brand-navy border border-white/50">
                                 <div className="text-3xl font-bold text-brand-blue mb-1">100%</div>
-                                <div className="text-sm font-semibold opacity-80">Committed to Transparency & Care</div>
+                                <div className="text-sm font-semibold opacity-80">Komited kepada Ketelusan & Keprihatinan</div>
                             </div>
                         </div>
                         {/* Decorative element */}
@@ -77,8 +77,8 @@ const Features: React.FC = () => {
 
             {/* Features Grid - Bright, but soft Light Cyan Background */}
             <Section
-                title="Why Malaysians Trust We Kongsi"
-                subtitle="Built on transparency, fairness, and shared responsibility."
+                title="Mengapa Rakyat Malaysia Mempercayai We Kongsi"
+                subtitle="Dibina atas dasar ketelusan, keadilan, dan tanggungjawab bersama."
                 id="benefits"
                 className="bg-cyan-50 relative"
             >
