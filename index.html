@@ -29,12 +29,44 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+
+    #error-display {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fef2f2;
+      color: #991b1b;
+      padding: 1rem;
+      z-index: 9999;
+      display: none;
+      border-bottom: 1px solid #f87171;
+      font-family: monospace;
+      font-size: 14px;
+    }
   </style>
+  <script>
+    window.addEventListener('error', function (event) {
+      const errorDisplay = document.getElementById('error-display');
+      if (errorDisplay) {
+        errorDisplay.style.display = 'block';
+        errorDisplay.innerText = 'Error: ' + event.message + ' at ' + event.filename + ':' + event.lineno;
+      }
+    });
+    window.addEventListener('unhandledrejection', function (event) {
+      const errorDisplay = document.getElementById('error-display');
+      if (errorDisplay) {
+        errorDisplay.style.display = 'block';
+        errorDisplay.innerText = 'Promise Rejection: ' + event.reason;
+      }
+    });
+  </script>
   <script type="module" crossorigin src="/23-12/assets/index-Dwx-R5yn.js"></script>
   <link rel="stylesheet" crossorigin href="/23-12/assets/index-BPGCn_QD.css">
 </head>
 
 <body>
+  <div id="error-display"></div>
   <div id="root"></div>
 </body>
 
