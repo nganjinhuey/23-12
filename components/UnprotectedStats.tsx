@@ -3,20 +3,20 @@ import { Users, AlertCircle, HelpCircle, DollarSign, Search, ShieldAlert, Shield
 
 const UnprotectedStats: React.FC = () => {
     return (
-        <section className="py-24 bg-gradient-to-br from-brand-navy via-slate-900 to-teal-950 relative overflow-hidden">
+        <section className="py-24 bg-gradient-to-br from-teal-50 to-sky-100/50 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* Headline */}
                 <div className="text-center mb-20">
-                    <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                    <h2 className="text-4xl md:text-6xl font-extrabold text-brand-navy mb-6 tracking-tight">
                         78% of Malaysians are <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">
                             UNPROTECTED
                         </span>
                     </h2>
 
-                    <div className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-8 shadow-lg hover:scale-105 transition-transform duration-300">
-                        <span className="text-teal-50 font-bold text-xl tracking-tight">Are you one of them?</span>
+                    <div className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-teal-50 border border-teal-100 mb-8 shadow-sm hover:scale-105 transition-transform duration-300">
+                        <span className="text-teal-800 font-bold text-xl tracking-tight">Are you one of them?</span>
                         <span className="text-2xl animate-wave">✋</span>
                     </div>
                 </div>
@@ -24,41 +24,41 @@ const UnprotectedStats: React.FC = () => {
                 {/* 3-Card Flex Layout (Proportional + Soft Gradient + Aligned) */}
                 <div className="flex flex-col lg:flex-row gap-6 items-stretch w-full">
 
-                    {/* CARD 1: THE BARRIER (42%) - SOFT SLATE/TEAL */}
-                    <div className="lg:flex-[42] group relative bg-white rounded-[2rem] p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col border border-slate-100 hover:border-teal-100">
+                    {/* CARD 1: THE BARRIER (42%) - RED THEME */}
+                    <div className="lg:flex-[42] group relative bg-red-50 rounded-[2rem] p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col border border-red-100 hover:border-red-200">
 
-                        <div className="w-20 h-20 rounded-2xl bg-slate-50 flex items-center justify-center text-slate-500 mb-8 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-slate-100 group-hover:bg-teal-50 group-hover:text-teal-600 group-hover:border-teal-50">
+                        <div className="w-20 h-20 rounded-2xl bg-white flex items-center justify-center text-red-500 mb-8 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-red-50">
                             <DollarSign size={40} strokeWidth={2} />
                         </div>
 
                         <div className="mb-4">
-                            <span className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-br from-slate-700 to-slate-900 group-hover:from-teal-700 group-hover:to-teal-900">
+                            <span className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-br from-red-700 to-red-900">
                                 42%
                             </span>
                         </div>
 
-                        <h3 className="text-2xl font-bold text-slate-700 mb-4 group-hover:text-teal-800">"Too expensive for what I get"</h3>
-                        <p className="text-slate-500 leading-relaxed flex-grow font-medium">
-                            Rising premiums and age-based pricing push many people out of traditional coverage.
+                        <h3 className="text-2xl font-bold text-red-600 mb-4">"Cannot Afford It"</h3>
+                        <p className="text-slate-600 leading-relaxed flex-grow font-medium">
+                            Traditional insurance premiums are rising faster than wages, pricing out nearly half the population from essential coverage.
                         </p>
                     </div>
 
-                    {/* CARD 2: THE MINDSET (36%) - SOFT SLATE/BLUE */}
-                    <div className="lg:flex-[36] group relative bg-white rounded-[2rem] p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col border border-slate-100 hover:border-blue-100">
+                    {/* CARD 2: THE MINDSET (36%) - ORANGE THEME */}
+                    <div className="lg:flex-[36] group relative bg-orange-50 rounded-[2rem] p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col border border-orange-100 hover:border-orange-200">
 
-                        <div className="w-20 h-20 rounded-2xl bg-slate-50 flex items-center justify-center text-slate-500 mb-8 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-slate-100 group-hover:bg-blue-50 group-hover:text-blue-600 group-hover:border-blue-50">
+                        <div className="w-20 h-20 rounded-2xl bg-white flex items-center justify-center text-orange-500 mb-8 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-orange-50">
                             <HelpCircle size={40} strokeWidth={2} />
                         </div>
 
                         <div className="mb-4">
-                            <span className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-br from-slate-700 to-slate-900 group-hover:from-blue-700 group-hover:to-blue-900">
+                            <span className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-br from-orange-600 to-orange-800">
                                 36%
                             </span>
                         </div>
 
-                        <h3 className="text-2xl font-bold text-slate-700 mb-4 group-hover:text-blue-800">"I'll deal with it later"</h3>
-                        <p className="text-slate-500 leading-relaxed flex-grow font-medium">
-                            Many underestimate medical risks until an unexpected hospital bill hits.
+                        <h3 className="text-2xl font-bold text-orange-600 mb-4">"Don't Need It"</h3>
+                        <p className="text-slate-600 leading-relaxed flex-grow font-medium">
+                            Many underestimate their health risks until it's too late, leaving them exposed to devastating hospital bills without a safety net.
                         </p>
                     </div>
 
