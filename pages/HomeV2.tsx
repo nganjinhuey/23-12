@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import HeroV2 from '../components/HeroV2';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
 import UnprotectedStats from '../components/UnprotectedStats';
 import PainPoints from '../components/PainPoints';
 import Features from '../components/Features';
@@ -31,6 +32,7 @@ const HomeV2: React.FC = () => {
                 <Testimonials />
             </main>
             <Footer />
+            <FloatingWhatsApp />
         </div>
     );
 };
