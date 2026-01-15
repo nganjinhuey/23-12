@@ -78,8 +78,13 @@ const Header: React.FC = () => {
               )}
             </div>
 
-            {/* CTA Button - Links to WhatsApp */}
-            <Button size="sm" className="shadow-md" onClick={() => window.open('https://wa.me/60108768760', '_blank')}>
+            {/* CTA Button - Links to Bottom Section */}
+            <Button size="sm" className="shadow-md" onClick={() => {
+              const element = document.getElementById('join-section');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}>
               Join Now
             </Button>
           </div>

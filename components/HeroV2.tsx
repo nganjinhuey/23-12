@@ -28,7 +28,7 @@ const HeroV2: React.FC = () => {
 
     const openWhatsApp = () => {
         console.log("Opening WhatsApp...");
-        window.open('https://wa.me/60123456789', '_blank');
+        window.open('https://wa.me/60108768760', '_blank');
     };
 
     return (
