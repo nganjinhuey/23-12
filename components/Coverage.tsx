@@ -13,9 +13,6 @@ const Coverage: React.FC = () => {
                 className="bg-gradient-to-b from-cyan-50/40 to-blue-50/40"
             >
                 <div className="text-center mb-8">
-                    <p className="text-md text-slate-600 font-medium bg-white inline-block px-6 py-2 rounded-full border border-teal-100 shadow-sm">
-                        Coverage focuses on meaningful medical needs — not complicated add-ons.
-                    </p>
                 </div>
 
                 <p className="text-center text-xs font-semibold text-slate-400 mb-8 mx-auto block w-fit">

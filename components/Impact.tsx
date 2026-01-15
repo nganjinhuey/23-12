@@ -26,15 +26,15 @@ const Impact: React.FC = () => {
       title="What Our Community Has Built Together"
       subtitle="See the real impact we make when we come together."
       id="impact"
-      className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-white to-cyan-100/30"
-      dark={false}
+      className="relative overflow-hidden bg-gradient-to-br from-brand-navy via-slate-900 to-brand-navy"
+      dark={true}
     >
 
-      {/* Soft Background Blobs for mixed cool tones */}
+      {/* Soft Background Blobs for mixed cool tones - Adjusted for Dark Mode */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-full opacity-40 mix-blend-multiply bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-200 via-cyan-100 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-100 rounded-full blur-[80px] -translate-x-1/2 translate-y-1/2"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-purple-100 rounded-full blur-[80px] translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute top-0 left-0 w-full h-full opacity-20 mix-blend-overlay bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-teal-500 via-blue-500 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-teal-900/30 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2"></div>
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-900/30 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2"></div>
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto flex flex-col gap-4 mb-8">

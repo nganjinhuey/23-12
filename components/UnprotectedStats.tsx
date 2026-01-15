@@ -3,20 +3,20 @@ import { Users, AlertCircle, HelpCircle, DollarSign, Search, ShieldAlert, Shield
 
 const UnprotectedStats: React.FC = () => {
     return (
-        <section className="py-24 bg-gradient-to-br from-teal-50 to-sky-100/50 relative overflow-hidden">
+        <section className="py-24 bg-gradient-to-br from-brand-navy via-slate-900 to-teal-950 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* Headline */}
                 <div className="text-center mb-20">
-                    <h2 className="text-4xl md:text-6xl font-extrabold text-brand-navy mb-6 tracking-tight">
+                    <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
                         78% of Malaysians are <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-teal-600">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
                             UNPROTECTED
                         </span>
                     </h2>
 
-                    <div className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-teal-50 border border-teal-100 mb-8 shadow-sm hover:scale-105 transition-transform duration-300">
-                        <span className="text-teal-800 font-bold text-xl tracking-tight">Are you one of them?</span>
+                    <div className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-8 shadow-lg hover:scale-105 transition-transform duration-300">
+                        <span className="text-teal-50 font-bold text-xl tracking-tight">Are you one of them?</span>
                         <span className="text-2xl animate-wave">✋</span>
                     </div>
                 </div>
