@@ -10,7 +10,9 @@ const PainPoints: React.FC = () => {
   };
 
   return (
-    <Section className="bg-slate-50">
+    <Section className="bg-gradient-to-br from-sky-50 via-white to-indigo-50/40 relative overflow-hidden">
+      {/* Decorative Blob */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100/40 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">What Most People Overlook About Medical Protection</h2>
         <p className="text-lg text-slate-600 max-w-3xl mx-auto">
