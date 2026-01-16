@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
                                     <Button
                                         size="lg"
                                         className="w-full !bg-teal-100 !text-[#01154f] hover:!bg-teal-200 hover:!text-[#01154f] h-14 text-lg font-extrabold rounded-xl justify-center border-none shadow-sm transition-colors"
-                                        onClick={() => window.open('https://forms.gle/XYZ', '_blank')}
+                                        onClick={() => window.open('https://brand.wekongsi.com/widget/form/JO8rQlGhvRv0DlGWf0TI', '_blank')}
                                     >
                                         Register Interest
                                     </Button>
