@@ -10,7 +10,7 @@ const PainPoints: React.FC = () => {
   };
 
   return (
-    <Section className="bg-white">
+    <Section className="bg-white border-t border-teal-50">
       <div className="text-center mb-16">
         <div className="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-brand-navy text-xs font-bold uppercase tracking-wider mb-6">
           The Reality of Healthcare in Malaysia
