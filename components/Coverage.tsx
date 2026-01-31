@@ -6,15 +6,16 @@ import { Check, X, Calendar, Banknote, ShieldCheck } from 'lucide-react';
 const Coverage: React.FC = () => {
     return (
         <div className="bg-white">
-            {/* Covered Items Grid - Clean White Theme */}
+            {/* Covered Items Grid - Dark Navy Theme */}
             <Section
                 title="What's Included in Your Coverage"
                 subtitle="Comprehensive protection for peace of mind when you need it most."
-                className="bg-white pb-32"
+                className="bg-brand-navy pb-32"
+                dark={true}
             >
                 <div className="flex justify-center mb-12">
-                    <span className="px-5 py-1.5 rounded-full bg-slate-400 text-white text-[10px] font-bold tracking-widest uppercase">
-                        * WAITING PERIOD APPLIES
+                    <span className="px-5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200 text-xs font-bold tracking-widest uppercase shadow-sm">
+                        * Waiting Period Applies
                     </span>
                 </div>
 
