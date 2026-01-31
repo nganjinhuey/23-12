@@ -6,17 +6,15 @@ import { Check, X, Calendar, Banknote, ShieldCheck } from 'lucide-react';
 const Coverage: React.FC = () => {
     return (
         <div className="bg-white">
-            {/* Covered Items Grid - Dark Navy Theme */}
+            {/* Covered Items Grid - Clean White Theme */}
             <Section
                 title="What's Included in Your Coverage"
                 subtitle="Comprehensive protection for peace of mind when you need it most."
-                className="bg-brand-navy text-white pb-32"
-                titleClassName="text-white"
-                subtitleClassName="text-slate-300"
+                className="bg-white pb-32"
             >
                 <div className="flex justify-center mb-12">
-                    <span className="px-4 py-1.5 rounded-full bg-slate-700/50 border border-slate-600 text-slate-300 text-xs font-semibold tracking-wider uppercase">
-                        * Waiting Period Applies
+                    <span className="px-5 py-1.5 rounded-full bg-slate-400 text-white text-[10px] font-bold tracking-widest uppercase">
+                        * WAITING PERIOD APPLIES
                     </span>
                 </div>
 
@@ -24,7 +22,7 @@ const Coverage: React.FC = () => {
                     {COVERAGE_ITEMS.map((item, idx) => {
                         const Icon = item.icon;
                         return (
-                            <div key={idx} className="bg-white rounded-2xl p-6 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 h-full justify-center group relative overflow-hidden cursor-pointer">
+                            <div key={idx} className="bg-white rounded-2xl p-6 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_25px_rgba(0,0,0,0.1)] transition-all duration-500 hover:-translate-y-2 h-full justify-center group relative overflow-hidden cursor-pointer border border-slate-50">
                                 <div className="mb-4 text-brand-navy group-hover:text-brand-teal transition-colors duration-300 flex justify-center">
                                     <Icon size={36} strokeWidth={1.5} />
                                 </div>
