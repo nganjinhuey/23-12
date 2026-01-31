@@ -26,8 +26,8 @@ const Footer: React.FC = () => {
                         <div>
                             <div className="inline-block bg-brand-navy text-white text-xs font-bold px-3 py-1 rounded-full mb-4">Sertai Komuniti Kami</div>
                             <h2 className="text-4xl md:text-5xl font-extrabold text-brand-navy leading-tight">
-                                Apa Tunggu <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-teal">Lagi?</span>
+                                Jangan Tunggu <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-teal">Sampai Terlambat</span>
                             </h2>
                         </div>
 
@@ -129,6 +129,9 @@ const Footer: React.FC = () => {
                         </p>
                         <p className="text-xs text-slate-500 leading-relaxed">
                             Keahlian ini tidak berfungsi sebagai polisi insurans. Ahli bertanggungjawab atas perbelanjaan sendiri tetapi berkongsi risiko secara kolektif.
+                        </p>
+                        <p className="text-xs text-slate-500 leading-relaxed mt-4">
+                            Halaman ini diterjemahkan dari Bahasa Inggeris. Sekiranya terdapat sebarang percanggahan, sila rujuk versi Bahasa Inggeris.
                         </p>
                     </div>
                 </div>

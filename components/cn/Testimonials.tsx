@@ -126,8 +126,8 @@ const Testimonials: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-teal-200 rounded-full blur-[100px] opacity-40 pointer-events-none translate-y-1/2 -translate-x-1/3"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center mb-10">
-        <h2 className="text-2xl md:text-3xl font-bold text-brand-navy">信任与解脱的故事</h2>
-        <p className="text-slate-600 mt-2 text-lg font-medium">来自我们社区会员的真实故事，他们找到了内心的平静。</p>
+        <h2 className="text-2xl md:text-3xl font-bold text-brand-navy">进院会员的见证</h2>
+        <p className="text-slate-600 mt-2 text-lg font-medium">他们找到让他们负担得起以及安心的医疗保障</p>
         <div className="w-16 h-1 mx-auto mt-4 rounded-full bg-brand-navy/20"></div>
       </div>
 

@@ -1,38 +1,50 @@
 import React from 'react';
-import { Users, AlertCircle, HelpCircle, DollarSign, Search, ShieldAlert, ShieldCheck } from 'lucide-react';
+import { Users, HelpCircle, DollarSign, ShieldCheck } from 'lucide-react';
 
 const UnprotectedStats: React.FC = () => {
     return (
-        <section className="py-24 bg-brand-surface-navy relative overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <section className="bg-white relative overflow-hidden">
+            {/* Header Section - Dark Navy Background */}
+            <div className="bg-brand-navy py-24 pb-48 relative overflow-hidden">
+                {/* Background Pattern/Overlay */}
+                <div className="absolute inset-0 bg-black/40"></div>
+                {/* Optional: Add an actual image background here if available, e.g., <img src="image16.jpg" className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay" /> */}
 
-                {/* Headline */}
-                <div className="text-center mb-20">
-                    <h2 className="text-4xl md:text-6xl font-extrabold text-brand-navy mb-6 tracking-tight">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                    <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
                         78% of Malaysians are <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500">
+                        <span className="text-red-500">
                             UNPROTECTED
                         </span>
                     </h2>
 
-                    <div className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-red-50 border border-red-100 mb-8 shadow-sm hover:scale-105 transition-transform duration-300">
-                        <span className="text-red-600 font-bold text-xl tracking-tight">Are you one of them?</span>
-                        <span className="text-2xl animate-wave">✋</span>
+                    <p className="text-slate-200 text-xl font-medium max-w-2xl mx-auto">
+                        Many delay medical protection until it's too late.
+                    </p>
+
+                    <div className="mt-8 inline-block">
+                        <div className="animate-bounce text-slate-400">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                {/* 3-Card Flex Layout (Proportional + Soft Gradient + Aligned) */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 -mt-32 mb-24">
+                {/* 3-Card Flex Layout */}
                 <div className="flex flex-col lg:flex-row gap-6 items-stretch w-full">
 
-                    {/* CARD 1: THE BARRIER (42%) - SOFT RED */}
-                    <div className="lg:flex-[42] group relative bg-gradient-to-br from-red-50 to-red-100 rounded-[2rem] p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col border border-red-100">
+                    {/* CARD 1: THE BARRIER (42%) - WHITE BG, RED ACCENTS */}
+                    <div className="lg:flex-[42] group relative bg-white rounded-[2rem] p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col border border-slate-100">
 
-                        <div className="w-20 h-20 rounded-2xl bg-white flex items-center justify-center text-red-500 mb-8 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-red-50">
+                        <div className="w-20 h-20 rounded-2xl bg-red-50 flex items-center justify-center text-red-500 mb-8 group-hover:scale-110 transition-transform duration-300">
                             <DollarSign size={40} strokeWidth={2} />
                         </div>
 
                         <div className="mb-4">
-                            <span className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-br from-red-600 to-red-800">
+                            <span className="text-6xl font-black text-red-700">
                                 42%
                             </span>
                         </div>
@@ -43,15 +55,15 @@ const UnprotectedStats: React.FC = () => {
                         </p>
                     </div>
 
-                    {/* CARD 2: THE MINDSET (36%) - SOFT ORANGE */}
-                    <div className="lg:flex-[36] group relative bg-gradient-to-br from-orange-50 to-orange-100 rounded-[2rem] p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col border border-orange-100">
+                    {/* CARD 2: THE MINDSET (36%) - WHITE BG, ORANGE ACCENTS */}
+                    <div className="lg:flex-[36] group relative bg-white rounded-[2rem] p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col border border-slate-100">
 
-                        <div className="w-20 h-20 rounded-2xl bg-white flex items-center justify-center text-orange-500 mb-8 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-orange-50">
+                        <div className="w-20 h-20 rounded-2xl bg-orange-50 flex items-center justify-center text-orange-500 mb-8 group-hover:scale-110 transition-transform duration-300">
                             <HelpCircle size={40} strokeWidth={2} />
                         </div>
 
                         <div className="mb-4">
-                            <span className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-br from-orange-500 to-orange-700">
+                            <span className="text-6xl font-black text-orange-600">
                                 36%
                             </span>
                         </div>
@@ -62,10 +74,8 @@ const UnprotectedStats: React.FC = () => {
                         </p>
                     </div>
 
-                    {/* CARD 3: THE SAFE ZONE (22%) - TEAL (highlighted) */}
-                    <div className="lg:flex-[22] group relative bg-brand-navy rounded-[2rem] p-8 md:p-10 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-2 border border-brand-teal/20 overflow-hidden flex flex-col">
-                        {/* Blob Background */}
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-brand-teal/10 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
+                    {/* CARD 3: THE SAFE ZONE (22%) - NAVY BG */}
+                    <div className="lg:flex-[22] group relative bg-brand-navy rounded-[2rem] p-8 md:p-10 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col border border-brand-teal/20">
 
                         <div className="w-20 h-20 rounded-2xl bg-brand-teal/20 flex items-center justify-center text-brand-teal mb-8 group-hover:scale-110 transition-transform duration-300 relative z-10">
                             <ShieldCheck size={40} strokeWidth={2} />
@@ -78,7 +88,7 @@ const UnprotectedStats: React.FC = () => {
                         </div>
 
                         <h3 className="text-2xl font-bold text-white mb-4 relative z-10">Are Protected</h3>
-                        <p className="text-brand-surface-blue opacity-80 leading-relaxed mb-8 text-sm relative z-10 flex-grow">
+                        <p className="text-slate-300 leading-relaxed mb-8 text-sm relative z-10 flex-grow">
                             Only a small minority have adequate coverage.
                         </p>
 

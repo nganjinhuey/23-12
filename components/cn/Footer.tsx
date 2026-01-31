@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
                         </div>
 
                         <p className="text-lg text-slate-600 leading-relaxed max-w-lg">
-                            今天就加入 <strong>We Kongsi</strong>。通过 <span className="text-brand-navy font-bold decoration-brand-teal underline decoration-4 underline-offset-4">RM1,000,000</span> 的医疗保障确保您的安心。
+                            今天就加入 <strong>WeKongsi</strong> 获得 <span className="text-brand-navy font-bold decoration-brand-teal underline decoration-4 underline-offset-4">1,000,000</span> 的医疗保障确保您的安心
                         </p>
 
                         <div className="flex flex-col sm:flex-col gap-5">
@@ -129,6 +129,9 @@ const Footer: React.FC = () => {
                         </p>
                         <p className="text-xs text-slate-500 leading-relaxed">
                             此会员资格不起保险单的作用。会员对自己负责，但也共同分担风险。
+                        </p>
+                        <p className="text-xs text-slate-500 leading-relaxed mt-4">
+                            此页面由英文翻译而来。如有任何差异，请以英文版本为准。
                         </p>
                     </div>
                 </div>

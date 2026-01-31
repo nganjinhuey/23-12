@@ -6,44 +6,39 @@ import { Check, X, Calendar, Banknote, ShieldCheck } from 'lucide-react';
 const Coverage: React.FC = () => {
     return (
         <div className="bg-white">
-            {/* Covered Items Grid - Rich Mid-Tone Blue Gradient */}
+            {/* Covered Items Grid - Dark Navy Theme */}
             <Section
                 title="What's Included in Your Coverage"
                 subtitle="Comprehensive protection for peace of mind when you need it most."
-                className="bg-gradient-to-br from-blue-100 via-sky-200 to-blue-200"
+                className="bg-brand-navy text-white pb-32"
+                titleClassName="text-white"
+                subtitleClassName="text-slate-300"
             >
-                <p className="text-center text-xs font-semibold text-slate-500 bg-white/50 inline-block px-3 py-1 rounded-full border border-blue-200/50 mb-8 mx-auto block w-fit">
-                    * Waiting Period Applies
-                </p>
+                <div className="flex justify-center mb-12">
+                    <span className="px-4 py-1.5 rounded-full bg-slate-700/50 border border-slate-600 text-slate-300 text-xs font-semibold tracking-wider uppercase">
+                        * Waiting Period Applies
+                    </span>
+                </div>
+
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
                     {COVERAGE_ITEMS.map((item, idx) => {
                         const Icon = item.icon;
                         return (
-                            <div key={idx} className="bg-white/90 backdrop-blur-sm rounded-xl p-6 flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full justify-center border border-blue-200/60 group relative overflow-hidden cursor-pointer">
-                                {/* Vibrant Darker Shade Teal Gradient Hover Effect */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-teal-600 to-cyan-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-                                <div className="relative z-10">
-                                    <div className="mb-4 text-brand-blue group-hover:text-white transition-colors duration-300 flex justify-center">
-                                        <Icon size={36} strokeWidth={1.5} />
-                                    </div>
-                                    <span className="text-sm md:text-base font-semibold text-brand-navy group-hover:text-white leading-tight transition-colors duration-300">
-                                        {item.name}
-                                    </span>
+                            <div key={idx} className="bg-white rounded-2xl p-6 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 h-full justify-center group relative overflow-hidden cursor-pointer">
+                                <div className="mb-4 text-brand-navy group-hover:text-brand-teal transition-colors duration-300 flex justify-center">
+                                    <Icon size={36} strokeWidth={1.5} />
                                 </div>
+                                <span className="text-sm md:text-base font-bold text-brand-navy leading-tight transition-colors duration-300">
+                                    {item.name}
+                                </span>
                             </div>
                         );
                     })}
                 </div>
             </Section>
 
-            {/* RM10 Benefit Section - Fresh Mint/Teal Theme */}
-            <section className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 overflow-hidden relative">
-                {/* Background Patterns */}
-                <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#0d9488 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-teal-100 rounded-full blur-[100px] -translate-y-1/3 translate-x-1/3 opacity-80 mix-blend-multiply"></div>
-                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-emerald-100 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4 opacity-80 mix-blend-multiply"></div>
-
+            {/* RM10 Benefit Section - Clean White Theme */}
+            <section className="py-20 bg-white relative overflow-hidden -mt-16 rounded-t-[3rem] z-10">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                     {/* Top Row: Content Left, Image Right */}
@@ -51,24 +46,24 @@ const Coverage: React.FC = () => {
 
                         {/* Left: Text Content & Bubbles */}
                         <div className="lg:w-7/12 text-left">
-                            <div className="inline-flex items-center px-3 py-1 rounded-full bg-brand-teal text-brand-navy text-xs font-bold uppercase tracking-wider mb-6 shadow-sm border-2 border-white">
+                            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-brand-teal text-brand-navy text-xs font-bold uppercase tracking-wider mb-6 shadow-sm">
                                 <ShieldCheck className="w-3 h-3 mr-1" /> Exclusive Perk
                             </div>
 
-                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6 leading-tight flex flex-wrap items-baseline gap-3">
+                            <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold text-brand-navy mb-6 leading-tight flex flex-wrap items-baseline gap-2">
                                 <span>Malaysia's First</span>
-                                <span className="text-6xl md:text-7xl lg:text-8xl font-bold text-emerald-500 leading-none transform translate-y-1">RM10</span>
+                                <span className="text-6xl md:text-7xl lg:text-7xl font-bold text-brand-teal leading-none">RM10</span> <br />
                                 <span className="w-full">Co-Payment Clinic Benefit</span>
-                                <span className="text-xl md:text-2xl text-slate-500 font-semibold block mt-1 tracking-tight w-full">(Conditional Outpatient Benefit, COB)</span>
                             </h2>
+                            <p className="text-xl text-slate-500 font-bold mb-6">(Conditional Outpatient Benefit, COB)</p>
 
-                            <p className="text-lg text-slate-700 mb-8 max-w-xl leading-relaxed">
+                            <p className="text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
                                 A value-added perk for early outpatient care. This <strong>Conditional Outpatient Benefit (COB)</strong> allows you to get treatment for common illnesses at just RM10 per clinic visit.
                             </p>
 
                             {/* Feature Bubbles - Clean Light Theme */}
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <div className="flex items-center bg-white/80 backdrop-blur-sm rounded-2xl p-4 border border-teal-200/50 shadow-md hover:shadow-lg transition-all hover:bg-white">
+                                <div className="flex items-center bg-brand-surface-teal rounded-2xl p-4 border border-teal-100 shadow-sm">
                                     <div className="bg-teal-100 p-3 rounded-full mr-4 text-teal-700">
                                         <Calendar className="w-6 h-6" />
                                     </div>
@@ -79,7 +74,7 @@ const Coverage: React.FC = () => {
                                     </div>
                                 </div>
 
-                                <div className="flex items-center bg-white/80 backdrop-blur-sm rounded-2xl p-4 border border-teal-200/50 shadow-md hover:shadow-lg transition-all hover:bg-white">
+                                <div className="flex items-center bg-brand-surface-teal rounded-2xl p-4 border border-teal-100 shadow-sm">
                                     <div className="bg-teal-100 p-3 rounded-full mr-4 text-teal-700">
                                         <Banknote className="w-6 h-6" />
                                     </div>
@@ -100,16 +95,15 @@ const Coverage: React.FC = () => {
                                     alt="RM10 Clinic Benefit"
                                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-teal-100/40 via-transparent to-transparent"></div>
                             </div>
                         </div>
                     </div>
 
-                    {/* Bottom Row: 3 Cards Grid - Yellow, Green, Red */}
+                    {/* Bottom Row: 3 Cards Grid - Yellow, Green, Red (Kept as is but ensured clean borders) */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                         {/* Card 1: Eligible Conditions (Soft Yellow) */}
-                        <div className="bg-amber-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col border border-amber-100">
+                        <div className="bg-amber-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col border border-amber-100">
                             <div className="p-5 bg-amber-100/50 border-b border-amber-200 flex items-center">
                                 <div className="w-8 h-8 rounded-full bg-amber-200 flex items-center justify-center mr-3 text-amber-700 font-bold">
                                     <Check className="w-5 h-5" />
@@ -134,7 +128,7 @@ const Coverage: React.FC = () => {
                         </div>
 
                         {/* Card 2: Covered Items (Green) */}
-                        <div className="bg-emerald-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col border border-emerald-100 relative z-10">
+                        <div className="bg-emerald-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col border border-emerald-100 relative z-10">
                             <div className="p-5 bg-emerald-100/50 border-b border-emerald-200 flex items-center">
                                 <div className="w-8 h-8 rounded-full bg-emerald-200 flex items-center justify-center mr-3 text-emerald-700 font-bold">
                                     <ShieldCheck className="w-5 h-5" />
@@ -154,7 +148,7 @@ const Coverage: React.FC = () => {
                         </div>
 
                         {/* Card 3: Non-Covered Items (Red) */}
-                        <div className="bg-red-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col border border-red-100">
+                        <div className="bg-red-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col border border-red-100">
                             <div className="p-5 bg-red-100/50 border-b border-red-200 flex items-center">
                                 <div className="w-8 h-8 rounded-full bg-red-200 flex items-center justify-center mr-3 text-red-600 font-bold">
                                     <X className="w-5 h-5" />
