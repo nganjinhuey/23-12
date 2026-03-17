@@ -28,7 +28,7 @@ const Features: React.FC = () => {
                         </div>
 
                         <h2 className="text-4xl md:text-5xl font-extrabold text-brand-navy mb-8 leading-tight">
-                            向您介绍 <br />
+                            认识 <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-navy via-brand-blue to-brand-teal animate-gradient">We Kongsi</span>
                         </h2>
 
@@ -39,17 +39,18 @@ const Features: React.FC = () => {
                                 <div className="absolute top-0 right-0 w-full h-full bg-white/40 skew-x-12 translate-x-full group-hover:translate-x-[-200%] transition-transform duration-1000"></div>
 
                                 <h3 className="text-lg md:text-xl font-extrabold text-brand-navy uppercase tracking-wide leading-snug relative z-10">
-                                    一个基于社区互助的医疗费用分摊计划
+                                    一个以社区互助为核心的医疗共担计划
                                 </h3>
                             </div>
                         </div>
 
-                        <p className="text-slate-700 text-lg leading-relaxed mb-8 font-medium">
-                            我们是一个致力于确保每个人都能获得透明、负担得起且公平医疗保障的社区。我们相信，通过团结一致，我们能够在免受昂贵医疗保费负担的情况下，相互保护。
+                        <p className="text-slate-700 text-lg leading-relaxed mb-8 font-medium space-y-4">
+                            <span className="block mb-2">我们致力于打造一个透明、可负担且公平的医疗互助社区。</span>
+                            <span className="block">通过成员之间的互相支持，让每个人都能在面对医疗费用时，少一份压力，多一份安心。</span>
                         </p>
 
                         <Button variant="primary" className="px-8 shadow-brand-navy/20 bg-brand-navy hover:bg-brand-navy-light text-white border-none" onClick={scrollToJoin}>
-                            联系我们了解详情 <ArrowRight className="ml-2 w-4 h-4" />
+                            了解更多 <ArrowRight className="ml-2 w-4 h-4" />
                         </Button>
                     </div>
 
