@@ -21,12 +21,21 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-gradient-to-br from-blue-50 via-cyan-50 to-emerald-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+    <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden min-h-[90vh] flex items-center">
+      {/* Background Image with Blur */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat blur-[3px] scale-105"
+        style={{ backgroundImage: `url('image1.jpg')` }}
+      />
+      
+      {/* Gradient Overlay for Text Contrast */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-white/95 via-white/85 to-white/40" />
 
-          {/* Left Content */}
-          <div className="w-full lg:w-1/2 text-left">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+          
+          {/* Content overlay on the left */}
+          <div className="w-full lg:w-1/2 text-left max-w-[600px]">
             {/* Badge */}
             <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-brand-blue/10 mb-8 shadow-sm">
               <span className="w-2.5 h-2.5 rounded-full bg-brand-teal mr-2 animate-pulse"></span>
@@ -47,7 +56,7 @@ const Hero: React.FC = () => {
               </span>
             </div>
 
-            <p className="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg">
+            <p className="text-lg text-slate-800 font-medium mb-8 leading-relaxed max-w-lg">
               停止支付昂贵的费用。加入成千上万的马来西亚人，加入这个公平、透明且负担得起的医疗费用分担社区。
             </p>
 
@@ -55,33 +64,16 @@ const Hero: React.FC = () => {
               <Button size="lg" variant="primary" className="rounded-xl px-8 shadow-lg shadow-brand-blue/10" onClick={scrollToJoin}>
                 立即加入我们 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <Button size="lg" variant="secondary" className="rounded-xl px-8 bg-white/50 border-brand-navy/20 hover:bg-brand-navy hover:border-brand-navy" onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button size="lg" variant="secondary" className="rounded-xl px-8 bg-white/80 border-brand-navy/20 hover:bg-brand-navy hover:text-white" onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}>
                 如何运作
               </Button>
             </div>
 
-            <div className="flex items-center text-sm text-slate-500 font-medium bg-white/60 p-3 rounded-lg w-fit border border-slate-200/60 backdrop-blur-sm">
+            <div className="flex items-center text-sm text-slate-700 font-medium bg-white/80 p-3 rounded-lg w-fit border border-slate-200/60 backdrop-blur-sm">
               <Info className="w-4 h-4 mr-2 text-brand-blue" />
               <span>从今天开始享受 RM100 万的医疗保障。</span>
             </div>
           </div>
-
-          {/* Right Visual - image1.jpg */}
-          <div className="w-full lg:w-1/2 relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] ring-1 ring-slate-100 bg-slate-200 group">
-              <img
-                src="image1.jpg"
-                alt="Happy family enjoying healthcare protection"
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-brand-navy/5 group-hover:bg-transparent transition-colors duration-500"></div>
-            </div>
-
-            {/* Decorative elements */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-brand-teal/20 rounded-full blur-3xl -z-10 mix-blend-multiply"></div>
-            <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-brand-navy/10 rounded-full blur-3xl -z-10 mix-blend-multiply"></div>
-          </div>
-
         </div>
       </div>
     </section>
