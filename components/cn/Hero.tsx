@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
       {/* Background Image with Blur */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat blur-[3px] scale-105"
-        style={{ backgroundImage: `url('image1.jpg')` }}
+        style={{ backgroundImage: `url('hero_students.png')` }}
       />
       
       {/* Gradient Overlay for Text Contrast */}
